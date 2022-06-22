@@ -1,11 +1,20 @@
-import { render, screen } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
+import { ThemeProvider } from 'styled-components'
+import theme from 'atoms/theme'
+import { Button } from 'components'
 
 describe('Botão', () => {
-  it('renders a heading', () => {
-    render(<button>teste</button>)
+  it('Executa uma função onClick', () => {
+    const clickHandler = jest.fn()
+    render(
+      <ThemeProvider theme={theme}>
+        <Button onClick={clickHandler}>teste</Button>
+      </ThemeProvider>
+    )
 
-    const heading = screen.getByText(/teste/i)
+    const button = screen.getByRole('button')
+    fireEvent.click(button)
 
-    expect(heading).toBeInTheDocument()
+    expect(clickHandler).toHaveBeenCalled()
   })
 })

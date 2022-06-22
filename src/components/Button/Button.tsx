@@ -1,6 +1,4 @@
 /* eslint-disable no-undef */
-// Config
-
 // Components
 import { Button } from './styles'
 // Assets

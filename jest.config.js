@@ -14,7 +14,7 @@ const customJestConfig = {
 
     '^@/pages/(.*)$': '<rootDir>/pages/$1',
   },
-  moduleDirectories: ['node_modules', '<rootDir>/'],
+  moduleDirectories: ['node_modules', '<rootDir>/src'],
   testEnvironment: 'jest-environment-jsdom',
 }
 
