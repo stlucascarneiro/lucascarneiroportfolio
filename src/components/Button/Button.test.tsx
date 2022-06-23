@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components'
 import theme from 'atoms/theme'
 import { Button } from 'components'
 
-describe('Botão', () => {
+describe('Botão Simples', () => {
   it('Executa uma função onClick', () => {
     const clickHandler = jest.fn()
     render(
