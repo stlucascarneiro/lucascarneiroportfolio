@@ -2,13 +2,13 @@ import icons from 'atoms/icons'
 import styled from 'styled-components'
 
 interface CardProps {
-    expansible?: boolean
     open?: boolean
 }
 export const Card = styled.div<CardProps>`
     display: flex;
     flex-direction: column;
     padding: ${({ open }) => open ? '20px 16px' : '16px'};
+    margin: 2rem 1rem;
     
     height: auto;
 
@@ -17,19 +17,18 @@ export const Card = styled.div<CardProps>`
     backdrop-filter: blur(16px);
     
     overflow: hidden;
-    transition: .2s;
-
-    margin: 8px;
+    transition: .4s;
 
     &:hover {
-        padding: ${({ expansible, open }) => (expansible && !open) ? '20px 16px' : ''};
-        transition: .2s;
+        padding-bottom: ${({ open }) => !open ? '2rem' : ''};
+        margin-bottom: ${({ open }) => !open ? '1rem' : ''};
+        transition: .4s;
     }
 `
 
-export const Header = styled.div<CardProps>`
+export const Header = styled.div`
     display: flex;
-    cursor: ${({ expansible }) => expansible ? 'pointer' : ''};
+    cursor: pointer;
 `
 export const Image = styled.img`
     width: min-content;
@@ -53,15 +52,6 @@ export const Subtitle = styled.small`
     font-style: italic;
 `
 
-export const SideContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-`
-export const SideInfo = styled.small`
-    
-`
 export const ButtonContainer = styled.div`
     display: flex;
     justify-content: flex-end;

@@ -28,8 +28,6 @@ export default function Home() {
         subtitle='Faculdade Descomplica'
         primaryButton = {{ icon: icons.navigation, label: 'Deploy' }}
         secondaryButton={{ icon: icons.github, label: 'Repositório' }}
-        expansible={true}
-        sideInfo="2022 - conclusão em 2024"
         image='images/css.png'>
         <Paragraph>
           Após uma grande mudança de carreira, criei uma paixão por estudar e trabalhar com desenvolvimento de software que mudou minha vida.

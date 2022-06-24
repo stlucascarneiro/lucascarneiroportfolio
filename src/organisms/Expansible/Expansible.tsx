@@ -1,7 +1,7 @@
 // Config
 import { useState } from 'react'
 // Components
-import { Body, Card, Header, Image, SideInfo, Subtitle, Title, TitleContainer, Chevron, SideContainer, ButtonContainer } from './styles'
+import { Body, Card, Header, Image, Subtitle, Title, TitleContainer, Chevron, ButtonContainer } from './styles'
 // Assets
 
 // Types
@@ -12,35 +12,29 @@ interface IButtons {
   label: string
 }
 interface IProps {
-  title: string
-  subtitle?: string
-  sideInfo?: string
   children?: any
+  title: string
   image?: string
-  expansible: boolean
+  alt?: string
+  subtitle?: string
   primaryButton?: IButtons
   secondaryButton?: IButtons
 }
 
-export const OrganismExpansible = ({ title, subtitle, sideInfo, children, image, expansible, primaryButton, secondaryButton }: IProps) => {
+export const OrganismExpansible = ({ title, subtitle, children, image, primaryButton, secondaryButton }: IProps) => {
   const [open, setOpen] = useState(false)
   return (
       <Card
-        expansible={expansible}
         open={open}>
-        <Header onClick={() => setOpen(!open)} expansible={expansible}>
+        <Header onClick={() => setOpen(!open)} role="header">
           {image && <Image src={image}/>}
           <TitleContainer>
             <Title>{title}</Title>
             {subtitle && <Subtitle>{subtitle}</Subtitle>}
           </TitleContainer>
-          <SideContainer>
-          {expansible
-            ? <Chevron open={open}/>
-            : <SideInfo>{sideInfo}</SideInfo>}
-          </SideContainer>
+          <Chevron open={open}/>
         </Header>
-        <Body open={open}>
+        <Body open={open} role='body'>
           {children}
           {(primaryButton || secondaryButton) &&
           <ButtonContainer>
