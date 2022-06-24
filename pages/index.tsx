@@ -1,6 +1,6 @@
 // import Head from 'next/head'
 // import Image from 'next/image'
-import { Button, Navigation } from 'components'
+import { Button, Navigation, Rate } from 'components'
 import { Card, Dropdown } from 'organisms'
 // Assets
 import icons from 'atoms/icons'
@@ -35,6 +35,9 @@ export default function Home() {
         Eu sou intenso em tudo o que me proponho a fazer e o desejo de sempre me superar me leva a ter prazer em aprender rapidamente. Por isso, é imprescindível, para mim, estar envolvido em atividades e responsabilidades que me desafiem a ser técnico, criativo e engajado com meus objetivos.</p>
       </Card>
       <Spacing/>
+      <Rate level={2}>
+        NextJs
+      </Rate>
     </div>
   )
 }
