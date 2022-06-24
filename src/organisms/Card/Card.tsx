@@ -22,7 +22,7 @@ interface IProps {
   secondaryButton?: IButtons
 }
 
-export const ComponentCard = ({ title, subtitle, sideInfo, children, image, expansible, primaryButton, secondaryButton }: IProps) => {
+export const OrganismCard = ({ title, subtitle, sideInfo, children, image, expansible, primaryButton, secondaryButton }: IProps) => {
   const [open, setOpen] = useState(false)
   return (
       <Card
