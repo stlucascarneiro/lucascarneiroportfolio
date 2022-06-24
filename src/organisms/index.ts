@@ -1,2 +1,2 @@
-export { OrganismCard as Card } from './Card/Card'
+export { OrganismExpansible as Expansible } from './Expansible/Expansible'
 export { OrganismDropdown as Dropdown } from './Dropdown/Dropdown'

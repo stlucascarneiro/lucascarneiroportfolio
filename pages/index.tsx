@@ -1,7 +1,7 @@
 // import Head from 'next/head'
 // import Image from 'next/image'
-import { Button, Navigation, Paragraph, Rate } from 'components'
-import { Card, Dropdown } from 'organisms'
+import { Button, Navigation, Paragraph, Rate, Card } from 'components'
+import { Dropdown, Expansible } from 'organisms'
 // Assets
 import icons from 'atoms/icons'
 
@@ -23,7 +23,7 @@ export default function Home() {
         Menu Dropdown
       </Dropdown>
       <Spacing/>
-      <Card
+      <Expansible
         title="Análise e desenvolvimento de sistemas"
         subtitle='Faculdade Descomplica'
         primaryButton = {{ icon: icons.navigation, label: 'Deploy' }}
@@ -37,6 +37,9 @@ export default function Home() {
         <Paragraph title='Um título legal'>
         Eu sou intenso em tudo o que me proponho a fazer e o desejo de sempre me superar me leva a ter prazer em aprender rapidamente. Por isso, é imprescindível, para mim, estar envolvido em atividades e responsabilidades que me desafiem a ser técnico, criativo e engajado com meus objetivos.
         </Paragraph>
+      </Expansible>
+      <Card title='Um título legal' image='images/css.png' alt='Ilustração CSS' subtitle='Legenda' sideInfo='01/12/2015'>
+        <Paragraph>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, mollitia qui exercitationem voluptatem perspiciatis quidem placeat accusantium molestiae eveniet beatae at et consequuntur excepturi iusto aperiam quo obcaecati consectetur nihil.</Paragraph>
       </Card>
       <Spacing/>
       <Rate level={2}>
