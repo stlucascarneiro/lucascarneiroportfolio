@@ -5,28 +5,26 @@ import { Navigation } from './styles'
 // Assets
 
 // Types
-import { ButtonHTMLAttributes, useState } from 'react'
+import { ButtonHTMLAttributes } from 'react'
 import { IconType } from 'react-icons'
 import Link from 'next/link'
 
 interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-    icon: IconType,
-    path: string
+  index: number
+  icon: IconType
+  path: string
+  active: boolean
+  handleClick?: (index: number) => void
 }
 
-export const ComponentNavigation = ({ children, icon, path }: IProps) => {
-  const [active, setActive] = useState(false)
+export const ComponentNavigation = ({ index, children, icon, path, active, handleClick }: IProps) => {
   const Icon = icon
-
-  function handleClick() {
-    setActive(!active)
-  }
 
   return (
     <Link href={path}>
       <Navigation
           active={active}
-          onClick={handleClick}>
+          onClick={() => handleClick && handleClick(index)}>
           <Icon style={{ marginRight: '1.5rem', fontSize: '18px' }}/>
           {children}
       </Navigation>

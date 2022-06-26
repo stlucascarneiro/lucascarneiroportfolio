@@ -9,10 +9,10 @@ export const Navigation = styled.button<NavigationProps>`
     justify-content: flex-start;
     align-items: center;
     padding: 0.5rem;
-    margin-right: 1rem;
+    margin: 0.75rem 0;
     
-    /* min-width: 170px; */
-    width: fit-content;
+    min-width: 170px;
+    width: 100%;
 
     background-color: ${({ active, theme }) => active ? theme.color.background.inverse : 'transparent'};
     color: ${({ active, theme }) => active ? theme.color.element.inverse : theme.color.element.strong};

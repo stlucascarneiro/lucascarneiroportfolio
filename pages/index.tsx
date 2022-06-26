@@ -1,7 +1,7 @@
 // import Head from 'next/head'
 // import Image from 'next/image'
-import { Button, Navigation, Paragraph, Rate, Card } from 'components'
-import { Dropdown, Expansible } from 'organisms'
+import { Button, Paragraph, Rate, Card } from 'components'
+import { Dropdown, Expansible, Navbar } from 'organisms'
 // Assets
 import icons from 'atoms/icons'
 
@@ -14,7 +14,14 @@ export default function Home() {
     <div>
       <Button>Primário</Button>
       <Spacing/>
-      <Navigation icon={icons.briefcase} path="/carreira">Carreira</Navigation>
+      <Navbar menu={[
+        { icon: icons.user, label: 'Perfil', path: '/' },
+        { icon: icons.code, label: 'Habilidades', path: '/' },
+        { icon: icons.projects, label: 'Projetos', path: '/' },
+        { icon: icons.briefcase, label: 'Carreira', path: '/' },
+        { icon: icons.education, label: 'Educação', path: '/' },
+        { icon: icons.contact, label: 'Contato', path: '/' }
+      ]}/>
       <Spacing/>
       <Dropdown menu={[
         { label: 'Um Texto', onClick: () => console.log('teste') },

@@ -12,7 +12,7 @@ describe('Botão Navegação', () => {
     render(
       <RouterContext.Provider value={router}>
         <ThemeProvider theme={theme}>
-          <Navigation icon={icons.briefcase} path="/carreira">
+          <Navigation index={0} icon={icons.briefcase} path="/carreira" active={false}>
             Carreira
           </Navigation>
         </ThemeProvider>

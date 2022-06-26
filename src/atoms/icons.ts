@@ -1,4 +1,4 @@
-import { BiChevronDown, BiChevronRight, BiUser, BiBriefcase, BiCodeAlt, BiBookmark, BiCodeBlock, BiChat, BiNavigation, BiHide, BiShow, BiMap, BiMenu, BiX, BiEnvelope } from 'react-icons/bi'
+import { BiChevronDown, BiChevronRight, BiUser, BiBriefcase, BiCodeAlt, BiBookBookmark, BiCodeBlock, BiChat, BiNavigation, BiHide, BiShow, BiMap, BiMenu, BiX, BiEnvelope } from 'react-icons/bi'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 export default {
@@ -7,7 +7,7 @@ export default {
   user: BiUser,
   briefcase: BiBriefcase,
   code: BiCodeAlt,
-  education: BiBookmark,
+  education: BiBookBookmark,
   projects: BiCodeBlock,
   contact: BiChat,
   navigation: BiNavigation,
