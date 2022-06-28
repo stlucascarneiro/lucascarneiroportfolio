@@ -23,12 +23,35 @@ describe('Navbar', () => {
     const item1 = screen.getByText('Perfil')
     const item2 = screen.getByText('Carreira')
 
-    expect(item1).toHaveStyle(`background-color: ${theme.color.background.inverse}`)
+    expect(item1).toHaveStyle('background-color: transparent')
     expect(item2).toHaveStyle('background-color: transparent')
 
     fireEvent.click(item2)
 
     expect(item1).toHaveStyle('background-color: transparent')
     expect(item2).toHaveStyle(`background-color: ${theme.color.background.inverse}`)
+  })
+  it('Abre a gaveta de menu em dispositivos mobile', () => {
+    const router = createMockRouter({})
+    render(
+      <RouterContext.Provider value={router}>
+        <ThemeProvider theme={theme}>
+          <Navbar menu={[
+            { icon: icons.user, label: 'Perfil', path: '/Perfil' },
+            { icon: icons.briefcase, label: 'Carreira', path: '/Perfil' }
+          ]}/>
+        </ThemeProvider>
+      </RouterContext.Provider>
+    )
+
+    const trigger = screen.getByRole('trigger')
+    const navbar = screen.getByRole('navbar')
+
+    fireEvent.click(trigger)
+
+    const overlay = screen.getByRole('overlay')
+
+    expect(navbar).toHaveStyle('right: 0')
+    expect(overlay).toBeInTheDocument()
   })
 })

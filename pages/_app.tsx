@@ -4,6 +4,8 @@ import Head from 'next/head'
 import GlobalStyle from '../styles/global'
 import { ThemeProvider } from 'styled-components'
 import theme from 'atoms/theme'
+import { Navbar } from 'organisms'
+import icons from 'atoms/icons'
 
 // Types
 
@@ -14,7 +16,15 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <title>My new cool app</title>
       </Head>
       <GlobalStyle />
-      <Component {...pageProps} />
+      <Navbar menu={[
+        { icon: icons.user, label: 'Perfil', path: '/perfil' },
+        { icon: icons.code, label: 'Habilidades', path: '/habilidades' },
+        { icon: icons.projects, label: 'Projetos', path: '/' },
+        { icon: icons.briefcase, label: 'Carreira', path: '/' },
+        { icon: icons.education, label: 'Educação', path: '/' },
+        { icon: icons.contact, label: 'Contato', path: '/' }
+      ]}/>
+        <Component {...pageProps} />
     </ThemeProvider>
   )
 }
