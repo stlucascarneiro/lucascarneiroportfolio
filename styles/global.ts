@@ -22,11 +22,11 @@ export default createGlobalStyle`
         height: 100vh;
         display: flex;
         position: relative;
-        overflow-x: hidden;
-        overflow-y: auto;
+        overflow: hidden;
 
         @media ${Breakpoints.getBelow('tablet')} {
           flex-direction: column;
+          overflow-y: auto;
         }
     }
     ${typography}

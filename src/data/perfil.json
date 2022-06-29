@@ -36,31 +36,27 @@
     "profile": [
         {
             "title": "Suporte",
-            "text": [
-                "O perfil Suporte indica alguém que busca com maior prioridade o desenvolvimento das pessoas e do espírito de equipe. O bem-estar do grupo e a confiança das pessoas umas nas outras são fatores de alta importância."
-            ],
-            "rate": 33
+            "text": "O perfil Suporte indica alguém que busca com maior prioridade o desenvolvimento das pessoas e do espírito de equipe. O bem-estar do grupo e a confiança das pessoas umas nas outras são fatores de alta importância.",
+            "rate": 33,
+            "color": "#578BDE"
         },
         {
             "title": "Flexibilidade",
-            "text": [
-                "O perfil Flexibilidade indica alguém que busca fazer as coisas de forma diferente. Adaptabilidade e um grau de incerteza fazem parte dessa preferência. Por fim, a busca por liberdade e ausência de restrições também são fatores importantes."
-            ],
-            "rate": 29
+            "text": "O perfil Flexibilidade indica alguém que busca fazer as coisas de forma diferente. Adaptabilidade e um grau de incerteza fazem parte dessa preferência. Por fim, a busca por liberdade e ausência de restrições também são fatores importantes.",
+            "rate": 29,
+            "color": "#FFA588"
         },
         {
             "title": "Organização",
-            "text": [
-                "O perfil Organização diz respeito a alguém que busca ter as coisas claras e diretas. Ter claro o que deve ser feito e os caminhos onde se possa percorrer é uma coisa importante. Essa preferência também demonstra um foco na qualidade e na racionalidade."
-            ],
-            "rate": 28
+            "text": "O perfil Organização diz respeito a alguém que busca ter as coisas claras e diretas. Ter claro o que deve ser feito e os caminhos onde se possa percorrer é uma coisa importante. Essa preferência também demonstra um foco na qualidade e na racionalidade.",
+            "rate": 28,
+            "color": "#FF8EA3"
         },
         {
             "title": "Individualidade",
-            "text": [
-                "O perfil Individualidade indica alguém que busca responsabilidades individuais e foco na conquista de metas. Além disso, é importante uma ênfase na execução e na busca pelos números e objetivos setados"
-            ],
-            "rate": 10
+            "text": "O perfil Individualidade indica alguém que busca responsabilidades individuais e foco na conquista de metas. Além disso, é importante uma ênfase na execução e na busca pelos números e objetivos setados",
+            "rate": 10,
+            "color": "#16BFC1"
         }
     ]
 }

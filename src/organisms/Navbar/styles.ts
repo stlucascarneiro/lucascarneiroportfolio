@@ -7,6 +7,8 @@ export const MobileHeader = styled.div`
   justify-content: space-between;
   font-size: 32px;
   padding: 1rem;
+  background-color: ${({ theme }) => theme.color.background.glassy};
+  backdrop-filter: blur(12px);
 
   @media ${Breakpoints.getAbove('tablet')} {
     display: none;

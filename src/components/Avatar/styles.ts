@@ -7,6 +7,7 @@ interface AvatarProps {
 export const Avatar = styled.div`
   display: flex;
   align-items: center;
+  min-width: 180px;
 `
 export const Image = styled.img<AvatarProps>`
   margin-right: 0.75rem;
