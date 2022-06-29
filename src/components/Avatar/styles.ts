@@ -25,6 +25,7 @@ export const Name = styled.h1<AvatarProps>`
   font-weight: 500;
 `
 export const Subtitle = styled.small<AvatarProps>`
+  font-family: 'Montserrat Alternates', sans-serif;
   font-size: ${({ large }) => large ? '' : '10px'};
   color: ${({ theme }) => theme.color.brand.secondary};
 `

@@ -1,0 +1,66 @@
+{
+    "brief": {
+        "title": "Um resumo sobre mim",
+        "paragraphs": [
+            "Após uma grande mudança de carreira, criei uma paixão por estudar e trabalhar com desenvolvimento de software que mudou minha vida.",
+            "Eu sou intenso em tudo o que me proponho a fazer e o desejo de sempre me superar me leva a ter prazer em aprender rapidamente.",
+            "Por isso, é imprescindível, para mim, estar envolvido em atividades e responsabilidades que me desafiem a ser técnico, criativo e engajado com meus objetivos."
+        ]
+    },
+    "softSkills": {
+        "title": "Soft Skills",
+        "paragraphs": [
+            {
+                "title": "Aprendizagem",
+                "text": [
+                    "Tenho prazer em estar constantemente aprendendo, seja para aprimorar meus conhecimentos ou descobrir novas tecnologias.",
+                    "Costumo ser atento às experiências e opiniões de colegas de equipe a fim de facilitar meu processo de aprendizagem e adaptação."
+                ]
+            },
+            {
+                "title": "Adaptação e criatividade",
+                "text": [
+                    "Em todas as minhas experiências anteriores fui capaz de me adaptar muito rapidamente aos ambientes em que trabalhei, eu atribuo isso a uma capacidade de observação e proatividade diante dos desafios.",
+                    "Além disso, gosto de entender bem o fluxo de trabalho e executar soluções para agilizar e/ou automatizar processos, trazendo qualidade para mim e para parceiros."
+                ]
+            },
+            {
+                "title": "Técnica e metodologia",
+                "text": [
+                    "Entendo que para cada atividade existe uma ferramenta adequada e, para isso, me mantenho atualizado às tecnologias do mercado para melhor atender as demandas atuais.",
+                    "Da mesma forma, costumo seguir procedimentos e boas práticas para desenvolver, sabendo que assim eu alcanço maior produtividade nas tarefas."
+                ]
+            }
+        ]
+    },
+    "profile": [
+        {
+            "title": "Suporte",
+            "text": [
+                "O perfil Suporte indica alguém que busca com maior prioridade o desenvolvimento das pessoas e do espírito de equipe. O bem-estar do grupo e a confiança das pessoas umas nas outras são fatores de alta importância."
+            ],
+            "rate": 33
+        },
+        {
+            "title": "Flexibilidade",
+            "text": [
+                "O perfil Flexibilidade indica alguém que busca fazer as coisas de forma diferente. Adaptabilidade e um grau de incerteza fazem parte dessa preferência. Por fim, a busca por liberdade e ausência de restrições também são fatores importantes."
+            ],
+            "rate": 29
+        },
+        {
+            "title": "Organização",
+            "text": [
+                "O perfil Organização diz respeito a alguém que busca ter as coisas claras e diretas. Ter claro o que deve ser feito e os caminhos onde se possa percorrer é uma coisa importante. Essa preferência também demonstra um foco na qualidade e na racionalidade."
+            ],
+            "rate": 28
+        },
+        {
+            "title": "Individualidade",
+            "text": [
+                "O perfil Individualidade indica alguém que busca responsabilidades individuais e foco na conquista de metas. Além disso, é importante uma ênfase na execução e na busca pelos números e objetivos setados"
+            ],
+            "rate": 10
+        }
+    ]
+}

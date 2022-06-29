@@ -11,11 +11,12 @@ interface IProps {
   image: string
   alt: string
   large?: boolean
+  style?: any
 }
 
-export const ComponentAvatar = ({ name, subtitle, image, alt, large = false }: IProps) => {
+export const ComponentAvatar = ({ name, subtitle, image, alt, large = false, style }: IProps) => {
   return (
-    <Avatar>
+    <Avatar style={style}>
       <Image role="avatar" src={image} alt={alt} large={large}/>
       <NameContainer>
         <Name role="name" large={large}>{name}</Name>

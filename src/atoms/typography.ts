@@ -22,7 +22,7 @@ export default `
         font-weight: 500;
 
         @media ${Breakpoints.getBelow('tablet')} {
-            font-size: 14px;
+            font-size: 15px;
         }
     }
     h4 {

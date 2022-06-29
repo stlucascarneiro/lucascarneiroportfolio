@@ -13,9 +13,10 @@ export const MobileHeader = styled.div`
   }
 `
 export const Overlay = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 5;
 
   width: 100%;
   height: 100%;
@@ -27,6 +28,7 @@ export const Navbar = styled(motion.div)`
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  z-index: 6;
 
   width: fit-content;
   max-width: 220px;
@@ -37,7 +39,7 @@ export const Navbar = styled(motion.div)`
   transition: .5;
 
   @media ${Breakpoints.getBelow('tablet')} {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -220px;
     transition: .5 ease-in-out;

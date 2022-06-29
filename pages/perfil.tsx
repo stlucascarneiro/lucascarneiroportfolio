@@ -1,9 +1,10 @@
-import { Avatar } from 'components'
-import { useDevice } from 'hooks'
 import Head from 'next/head'
+import { useDevice } from 'hooks'
+// Components
 import { Body, Container } from '../styles/perfil'
-
-// Assets
+import { Avatar, Card, Paragraph } from 'components'
+// Data
+import { brief, softSkills } from 'data/perfil.json'
 
 function Header() {
   const device = useDevice()
@@ -16,7 +17,8 @@ function Header() {
         subtitle='Desenvolvedor Front-end'
         image='images/photo/avatar.png'
         alt='Fotografia de Lucas Carneiro'
-        large={true}/>}
+        large={true}
+        style={{ marginBottom: '2rem' }}/>}
     </>
   )
 }
@@ -30,6 +32,24 @@ export default function Perfil() {
     <Body>
       <Container>
         <Header/>
+        <Card title={brief.title}>
+          {brief.paragraphs.map((elem, index) => (
+            <>
+              <Paragraph key={index}>
+                {elem}
+              </Paragraph>
+            </>
+          ))}
+        </Card>
+        <Card title={softSkills.title}>
+          {softSkills.paragraphs.map((elem, index) => (
+            <>
+              <Paragraph key={index} title={elem.title}>
+                {elem.text}
+              </Paragraph>
+            </>
+          ))}
+        </Card>
       </Container>
     </Body>
     </>

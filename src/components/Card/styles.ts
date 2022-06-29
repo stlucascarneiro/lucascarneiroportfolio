@@ -1,9 +1,11 @@
 import styled from 'styled-components'
+import { Breakpoints } from 'utils/breakpoints'
 
 export const Card = styled.div`
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    margin-bottom: 2rem;
     
     height: auto;
 
@@ -14,7 +16,9 @@ export const Card = styled.div`
     overflow: hidden;
     transition: .2s;
 
-    margin: 8px;
+    @media ${Breakpoints.getBelow('tablet')} {
+      margin-bottom: 1rem;
+    }
 `
 export const Header = styled.div`
     display: flex;

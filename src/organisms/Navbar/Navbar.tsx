@@ -32,6 +32,7 @@ export const OrganismNavbar = ({ menu }: IProps) => {
         return false
       })
     })
+    setOpenNavbar(false)
   }
 
   return (
