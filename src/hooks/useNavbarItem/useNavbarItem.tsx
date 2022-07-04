@@ -1,33 +1,37 @@
 import { useEffect, useState } from 'react'
 import { IconType } from 'react-icons'
 
-enum pages {
-    'perfil',
-    'habilidades',
-    'projetos',
-    'carreira',
-    'educação',
-    'contato'
+export enum pages {
+  'perfil',
+  'habilidades',
+  'projetos',
+  'carreira',
+  'educação',
+  'contato'
 }
 interface IMenu {
-    icon: IconType
-    label: string
-    path: string
-  }
+  icon: IconType
+  label: string
+  path: string
+}
 
 export const hookUseNavbarItem = (menu: IMenu[]) => {
   const [itemActive, setItemActive] = useState<boolean[]>([])
 
-  useEffect(() => {
-    const page: any = location.pathname.substring(1)
+  function setActive(page : pages) {
     const pageIndex = Number(pages[page])
     setItemActive(() => (
-        menu.map((_, index) => {
-            if(index === pageIndex) return true
-            return false
-        })
+      menu.map((_, index) => {
+          if(index === pageIndex) return true
+          return false
+      })
     ))
+  }
+
+  useEffect(() => {
+    const page: any = location.pathname.substring(1)
+    setActive(page)
   }, [])
 
-  return { itemActive, setItemActive }
+  return { itemActive, setActive }
 }

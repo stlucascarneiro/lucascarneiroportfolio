@@ -5,12 +5,7 @@ export const Rate = styled.div`
     flex-direction: column;
     padding: 1rem;
 
-    max-width: 185px;
-
-    background-color: ${({ theme }) => theme.color.background.glassy};
-    backdrop-filter: blur(16px);
-
-    margin-left: 32px;
+    width: 220px;
 `
 
 export const Label = styled.label`

@@ -8,7 +8,7 @@ import { Label, LevelContainer, Pill, Rate } from './styles'
 // Types
 interface IProps {
   children: string
-  level: 1 | 2 | 3
+  level: number
 }
 
 export const ComponentRate = ({ children, level }: IProps) => {

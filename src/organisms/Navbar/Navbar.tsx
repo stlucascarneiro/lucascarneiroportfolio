@@ -18,20 +18,15 @@ interface IProps {
 }
 
 export const OrganismNavbar = ({ menu }: IProps) => {
-  const { itemActive, setItemActive } = useNavbarItem(menu)
+  const { itemActive, setActive } = useNavbarItem(menu)
   const [openNavbar, setOpenNavbar] = useState(false)
   const device = useDevice()
   const animation = {
     animate: { right: openNavbar ? 0 : '-220px' }
   }
 
-  function handleMenuClick(index : number) {
-    setItemActive((prevValue) => {
-      return prevValue.map((_, i) => {
-        if (i === index) return true
-        return false
-      })
-    })
+  function handleMenuClick(path : any) {
+    setActive(path.slice(1))
     setOpenNavbar(false)
   }
 
@@ -41,7 +36,7 @@ export const OrganismNavbar = ({ menu }: IProps) => {
         <Avatar
           name='Lucas Carneiro'
           subtitle='Desenvolvedor Front-end'
-          image='images/photo/avatar.png'
+          image='images/photos/avatar.png'
           alt='Fotografia de Lucas Carneiro'/>
         <Icons.menu role='trigger' onClick={() => setOpenNavbar(!openNavbar)}/>
       </MobileHeader>
@@ -56,7 +51,7 @@ export const OrganismNavbar = ({ menu }: IProps) => {
             ? <Avatar
             name='Lucas Carneiro'
             subtitle='Desenvolvedor Front-end'
-            image='images/photo/avatar.png'
+            image='images/photos/avatar.png'
             alt='Fotografia de Lucas Carneiro'/>
             : <>
             <Title>Menu</Title>
@@ -71,7 +66,7 @@ export const OrganismNavbar = ({ menu }: IProps) => {
               icon={elem.icon}
               path={elem.path}
               active={itemActive[index]}
-              handleClick={handleMenuClick}>
+              handleClick={() => handleMenuClick(elem.path)}>
               {elem.label}
             </Navigation>
           ))}

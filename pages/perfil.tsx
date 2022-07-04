@@ -15,7 +15,7 @@ function Header() {
       <Avatar
         name='Lucas Carneiro'
         subtitle='Desenvolvedor Front-end'
-        image='images/photo/avatar.png'
+        image='images/photos/avatar.png'
         alt='Fotografia de Lucas Carneiro'
         large={true}
         style={{ marginBottom: '2rem' }}/>}

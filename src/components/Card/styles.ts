@@ -10,8 +10,8 @@ export const Card = styled.div`
     height: auto;
 
     background-color: ${({ theme }) => theme.color.background.glassy};
-    border-radius: 4px;
     backdrop-filter: blur(16px);
+    border-radius: 4px;
     
     overflow: hidden;
     transition: .2s;
@@ -27,6 +27,10 @@ export const Image = styled.img`
     width: min-content;
     height: min-content;
     margin-right: 1rem;
+
+    @media ${Breakpoints.getBelow('tablet')} {
+      height: 48px;
+    }
 `
 export const TitleContainer = styled.div`
     display: flex;
