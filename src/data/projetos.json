@@ -1,0 +1,177 @@
+{
+    "projects": [
+        {
+            "title": "Portfólio - Site Pessoal",
+            "description": "Sigle Page Application em React com o objetivo de publicar minhas habilidades e projetos profissionais",
+            "image": {
+                "path": "images/previews/portfolio.png",
+                "alt": "Pré visualização página portfólio"
+            },
+            "repository": "https://github.com/stlucascarneiro/portfolio_client",
+            "deploy": "",
+            "technologies": [
+                {
+                    "title": "React & Next",
+                    "text": "O React é uma excelente biblioteca para criar interfaces e controlar estados, eventos e comportamentos de forma reativa. Combinada com NextJs, a aplicação conta com toda a funcionalidade de uma SPA somada à performance e à simplicidade de uma página HTML estática provida por SSR e Bundling."
+                },
+                {
+                    "title": "Typescript",
+                    "text": "Utilizar Typescript é uma forma de acelerar, criar e manter padrões de código e melhorar a segurança durante o processo de desenvolvimento prevenindo erros e inconsistências através das tipagens de objetos e procedimentos e a validação do código em tempo de desenvolvimento."
+                },
+                {
+                    "title": "Styled Components",
+                    "text": "Com a biblioteca do Styled Components é possível escrever o CSS de forma dinâmica com o CSS-in-JS e gerenciar melhor o escopo das regras CSS através da criação de componentes estilizados."
+                },
+                {
+                    "title": "Jest & React Testing Library",
+                    "text": "Para desenvolver testes unitários e de integração estou utilizando uma combinação de Jest para execução e organização dos testes automatizados e RTL para a manibulação do DOM."
+                },
+                {
+                    "title": "Framer Motion",
+                    "text": "O Framer Motion é uma biblioteca utilizada para criar animações de forma simples e declarativa. Essa funcionalidade se comporta muito bem com o ciclo de vida dos componentes React"
+                },
+                {
+                    "title": "Figma",
+                    "text": "Figma é uma ferramenta de prototipação de interfaces online. Costumo utilizá-la para criar wireframes, a responsividade e o design system dos projetos."
+                }
+            ],
+            "architecture": [
+                {
+                    "title": "Static Site Generator & Server Side Rendering",
+                    "text": "A maioria das páginas são geradas estaticamente pelo NextJs no lado do servidor e utilizam pouco ou nenhum processamento Javascript no lado do cliente. Isso garante uma melhor performance e ajuda nas ferramentas de pesquisas (SEO). Para páginas dinâmicas, como a /habilidades, uma página é gerada no lado do servidor a cada requisição para ser entregue ao cliente as informações prontas para o consumo"
+                },
+                {
+                    "title": "Funções Serverless",
+                    "text": "Para evitar os custos de um servidor essa aplicação utiliza funções serverless que realizam um processamento sob demanda. O script é executado quando há requisição e, não havendo mais demanda, a execução é finalizada."
+                },
+                {
+                    "title": "Test Driven Development (TDD)",
+                    "text": "Para esta aplicação utilizei a técnica de desenvolvimento guiada por testes. Para cada componente e organismo desenvolvo seu teste automatizado com o comportamento esperado usando o padrão AAA (Arrange, Act, Assert) e em seguida desenvolvo sua composição e comportamento."
+                },
+                {
+                    "title": "Design System & Design Atômico",
+                    "text": "Para criar uma identidade, manter padrões da interface e reduzir custos de manutenção optei por desenvolver um design system que é formado por regras e padrões pelos quais a interface se compõe. Dentre essas regras o Design Atômico serve para destacar e classificar das menores unidades da interface até a composição completa de uma página. Essa definição também ajuda a agilizar o processo de desenvolvimento."
+                },
+                {
+                    "title": "Responsividade",
+                    "text": "A interface criada se adapta a diferentes dispositivos, tanto desktops quanto mobile. Utilizei o conceito de Mobile-first para a criação visto que ajuda no desenvolvimento da adaptação da interface e dá prioridadade aos dispositivos mais utilizados atualmente."
+                }
+            ]
+        },
+        {
+            "title": "Desafio Porto Seguro",
+            "description": "Esse é o resultado de um desafio de desenvolver uma Landing Page em React a partir de um protótipo pronto.",
+            "image": {
+                "path": "images/previews/desafio_porto_seguro.png",
+                "alt": "Pré visualização página desafio porto seguro"
+            },
+            "repository": "https://github.com/stlucascarneiro/desafio_porto-seguro",
+            "deploy": "https://desafio-porto-seguro.vercel.app",
+            "technologies": [
+                {
+                    "title": "React & Next",
+                    "text": "O React é uma excelente biblioteca para criar interfaces e controlar estados, eventos e comportamentos de forma reativa. Combinada com NextJs, a aplicação conta com toda a funcionalidade de uma SPA somada à performance e à simplicidade de uma página HTML estática provida por SSR e Bundling."
+                },
+                {
+                    "title": "Typescript",
+                    "text": "Utilizar Typescript é uma forma de acelerar, criar e manter padrões de código e melhorar a segurança durante o processo de desenvolvimento prevenindo erros e inconsistências através das tipagens de objetos e procedimentos e a validação do código em tempo de desenvolvimento."
+                },
+                {
+                    "title": "Styled Components",
+                    "text": "Com a biblioteca do Styled Components é possível escrever o CSS de forma dinâmica com o CSS-in-JS e gerenciar melhor o escopo das regras CSS através da criação de componentes estilizados."
+                },
+                {
+                    "title": "Figma",
+                    "text": "Figma é uma ferramenta de prototipação de interfaces online. Costumo utilizá-la para criar wireframes, a responsividade e o design system dos projetos."
+                }
+            ],
+            "architecture": [
+                {
+                    "title": "Static Site Generator",
+                    "text": "A página é gerada estaticamente através da função getServerSideProps do Next e é entregue somente as informações que o cliente precisa para consumir, sem que precise realizar qualquer processamento pelo navegador."
+                },{
+                    "title": "Design System & Design Atômico",
+                    "text": "Para criar uma identidade, manter padrões da interface e reduzir custos de manutenção optei por desenvolver um design system que é formado por regras e padrões pelos quais a interface se compõe. Dentre essas regras o Design Atômico serve para destacar e classificar das menores unidades da interface até a composição completa de uma página. Essa definição também ajuda a agilizar o processo de desenvolvimento."
+                },
+                {
+                    "title": "Responsividade",
+                    "text": "A interface criada se adapta a diferentes dispositivos, tanto desktops quanto mobile. Utilizei o conceito de Mobile-first para a criação visto que ajuda no desenvolvimento da adaptação da interface e dá prioridadade aos dispositivos mais utilizados atualmente."
+                }
+            ]
+        },
+        {
+            "title": "Sala Dungeon - Server",
+            "description": "Camada de back-end de um blog especializado em jogos de tabuleiro. Possui um CRUD feito com NodeJS, GraphQL, Prisma e PostgreSQL",
+            "image": {
+                "path": "images/logos/graphql.png",
+                "alt": "Logo GraphQL"
+            },
+            "repository": "https://github.com/stlucascarneiro/saladungeon-server",
+            "deploy": "",
+            "technologies": [
+                {
+                    "title": "Typescript",
+                    "text": "Utilizar Typescript é uma forma de acelerar, criar e manter padrões de código e melhorar a segurança durante o processo de desenvolvimento prevenindo erros e inconsistências através das tipagens de objetos e procedimentos e a validação do código em tempo de desenvolvimento."
+                },
+                {
+                    "title": "GraphQL & Apollo Server",
+                    "text": "Previnindo o Over-fetching, o GraphQL entra como uma solução com o objetivo de simplificar e melhorar a performance da comunicação entre front-end e back-end. Utilizei o Apollo Server para integrar com Apollo Client, Prisma e plugins do Nexus Prisma."
+                },
+                {
+                    "title": "Prisma",
+                    "text": "Utilizei o Prisma para agir como um ORM. Ele mapeia e modela os objetos do banco, cria migrations e seeds, facilita e agiliza o processo de desenvolvimento e cria uma conexão e comunicação mais segura com o banco de dados."
+                },
+                {
+                    "title": "Nexus",
+                    "text": "O Nexus foi uma escolha para utilizar a abordagem Code First nas declarações dos Schemas para o GraphQL. Ele funciona bem com o Typescript e previne o código de ficar verborrágico"
+                },
+                {
+                    "title": "PostgreSQL",
+                    "text": "A escolha do PostgreSQL nesse projeto se deu simplesmente pelo fato de ser gratuito e possuir compatibilidade com arrays."
+                },
+                {
+                    "title": "Redis",
+                    "text": "Redis é um armazenamento de dados em memória que, nesta aplicação, estou utilizando apenas para controlar a validade dos Access e Refresh Token"
+                },
+                {
+                    "title": "Json Web Token (JWT)",
+                    "text": "JWT é uma tecnologia bem difundida no mercado para controle de dados com assinatura. Aqui estou utilizando para passar e receber informações sobre o usuário de forma segura através da API"
+                }
+            ],
+            "architecture": [
+                {
+                    "title": "Padrão MVC",
+                    "text": "Foi utilizado o padrão de arquitetura MVC com algumas alterações para se adequar a uma API GraphQL. Os Schemas são o mapeamento do banco de dados e dos resolvers (Queries e Mutations). Dentro de Modelos estão os objetos com propriedades e métodos necessários para a manipulação de uma tecnologia. Os Controllers definem o fluxo de métodos para cada requisição. Por fim, os Middlewares são validações que serão reutilizadas em diversas etapas do fluxo."
+                },
+                {
+                    "title": "Refresh & Access Token",
+                    "text": "O fluxo de autenticação de usuários utiliza o Access Token como uma credencial que o usuário deverá apresentar a cada requisição e o Refresh Token para fazer uma verificação recorrente da validade do Access Token e evitar que o usuário tenha que se autenticar sempre que um JWT expirar."
+                },
+                {
+                    "title": "Segurança",
+                    "text": "Todos os inputs são validados para evitar qualquer injeção e todos códigos secretos são criptografados usando bcrypt para melhorar a segurança dos dados."
+                }
+            ]
+        }
+    ],
+    "minorProjects": [
+        {
+            "title": "Landing Page com ReactJs",
+            "description": "ReactJs, ChakraUI e Styled Components",
+            "image": {
+                "path": "images/logos/react.png",
+                "alt": "Logo ReactJs"
+            },
+            "repository": "https://github.com/stlucascarneiro/Landing-Page-Example"
+        },
+        {
+            "title": "CRUD com Sequelize ORM",
+            "description": "NodeJs, Javascript, Sequelize ORM e PostgreSQL",
+            "image": {
+                "path": "images/logos/sequelize.png",
+                "alt": "Logo Sequelize ORM"
+            },
+            "repository": "https://github.com/stlucascarneiro/CRUD-NodeJS"
+        }
+    ]
+}

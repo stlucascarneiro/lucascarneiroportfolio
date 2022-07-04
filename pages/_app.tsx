@@ -19,7 +19,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <Navbar menu={[
         { icon: icons.user, label: 'Perfil', path: '/perfil' },
         { icon: icons.code, label: 'Habilidades', path: '/habilidades' },
-        { icon: icons.projects, label: 'Projetos', path: '/' },
+        { icon: icons.projects, label: 'Projetos', path: '/projetos' },
         { icon: icons.briefcase, label: 'Carreira', path: '/' },
         { icon: icons.education, label: 'Educação', path: '/' },
         { icon: icons.contact, label: 'Contato', path: '/' }

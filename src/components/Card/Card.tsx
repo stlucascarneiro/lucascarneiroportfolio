@@ -1,23 +1,27 @@
 // Config
 
 // Components
+import { MouseEventHandler } from 'react'
 import { Body, Card, Header, Image, SideInfo, Subtitle, Title, TitleContainer } from './styles'
 // Assets
 
 // Types
 interface IProps {
-  children: any
+  children?: any
   title: string
   image?: string
   alt?: string
   subtitle?: string
   sideInfo?: string
+  onClick?: MouseEventHandler
 }
 
-export const ComponentCard = ({ children, title, image, alt, subtitle, sideInfo }: IProps) => {
+export const ComponentCard = ({ children, title, image, alt, subtitle, sideInfo, onClick }: IProps) => {
   return (
-      <Card>
-        <Header>
+      <Card clickable={!!onClick}>
+        <Header
+          style={{ cursor: onClick ? 'pointer' : '' }}
+          onClick={(e) => onClick && onClick(e)}>
             {image && <Image alt={alt} src={image}/>}
             <TitleContainer>
                 <Title role='title'>{title}</Title>
@@ -25,9 +29,9 @@ export const ComponentCard = ({ children, title, image, alt, subtitle, sideInfo 
             </TitleContainer>
             {sideInfo && <SideInfo role='sideInfo'>{sideInfo}</SideInfo>}
         </Header>
-        <Body role='body'>
+        {children && <Body role='body'>
           {children}
-        </Body>
+        </Body>}
       </Card>
   )
 }

@@ -21,6 +21,7 @@ export const Container = styled.div`
 
 export const Title = styled.h2`
   margin-bottom: 1rem;
+  font-size: 20px;
 `
 export const LabelContainer = styled.div`
   display: flex;

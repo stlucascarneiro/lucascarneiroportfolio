@@ -1,7 +1,7 @@
 // Config
 import { useState } from 'react'
 // Components
-import { Body, Card, Header, Image, Subtitle, Title, TitleContainer, Chevron, ButtonContainer } from './styles'
+import { Body, Expansible, Header, Image, Subtitle, Title, TitleContainer, Chevron, ButtonContainer, Anchor } from './styles'
 // Assets
 
 // Types
@@ -10,6 +10,7 @@ import { Button } from 'components'
 interface IButtons {
   icon: IconType
   label: string
+  href: string
 }
 interface IProps {
   children?: any
@@ -24,13 +25,14 @@ interface IProps {
 export const OrganismExpansible = ({ title, subtitle, children, image, primaryButton, secondaryButton }: IProps) => {
   const [open, setOpen] = useState(false)
   return (
-      <Card
+      <Expansible
         open={open}>
         <Header onClick={() => setOpen(!open)} role="header">
           {image && <Image src={image}/>}
           <TitleContainer>
             <Title>{title}</Title>
             {subtitle && <Subtitle>{subtitle}</Subtitle>}
+            <Subtitle>Leia mais ...</Subtitle>
           </TitleContainer>
           <Chevron open={open}/>
         </Header>
@@ -42,16 +44,26 @@ export const OrganismExpansible = ({ title, subtitle, children, image, primaryBu
             <Button
               icon={secondaryButton.icon}
               secondary={true}
-              style={{ marginRight: '1rem' }}
               small={true}>
-                {secondaryButton.label}
+                <Anchor
+                  href={secondaryButton.href}
+                  target='_blank'
+                  rel="noreferrer"
+                  style={{ fontWeight: '400' }}>
+                  {secondaryButton.label}
+                </Anchor>
             </Button>}
-            {primaryButton &&
-              <Button icon={primaryButton.icon} small={true}>
-                {primaryButton.label}
+            {(primaryButton && primaryButton.href.length > 0) &&
+              <Button
+                icon={primaryButton.icon}
+                small={true}
+                style={{ marginLeft: '1rem' }}>
+                <Anchor href={primaryButton.href} target='_blank' rel="noreferrer">
+                  {primaryButton.label}
+                </Anchor>
               </Button>}
           </ButtonContainer>}
         </Body>
-      </Card>
+      </Expansible>
   )
 }
