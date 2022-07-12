@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Breakpoints } from 'utils/breakpoints'
 
 export const Paragraph = styled.div`
-    
+    margin-bottom: 1rem;
 `
 
 export const Title = styled.h4`
@@ -13,10 +13,11 @@ export const Title = styled.h4`
 `
 
 export const Text = styled.p`
-    color: ${({ theme }) => theme.color.element.regular};
-    margin-bottom: 1rem;
+  color: ${({ theme }) => theme.color.element.regular};
+  margin-bottom: 0.5rem;
+  
 
-    @media ${Breakpoints.getBelow('tablet')} {
-      margin-bottom: 1.25rem;
-    }
+  @media ${Breakpoints.getBelow('tablet')} {
+    margin-bottom: 1rem;
+  }
 `

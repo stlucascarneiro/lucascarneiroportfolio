@@ -1,0 +1,78 @@
+{
+    "graduates": [
+        {
+            "title": "Análise e desenvolvimento de sistemas",
+            "organization": "Faculdade Descomplica",
+            "image": "images/logos/descomplica.png",
+            "alt":"Logo Faculdade Descomplica",
+            "date": "2022 - conclusão em 2024",
+            "certificates": []
+        },
+        {
+            "title": "Licenciatura em música",
+            "organization": "Universidade Federal do Estado do Rio de Janeiro",
+            "image": "images/logos/unirio.png",
+            "alt":"Logo Universidade Federal do Estado do Rio de Janeiro",
+            "date": "2015 - 2021",
+            "certificates": []
+        }
+    ],
+    "courses" : [
+        {
+            "organization": "Alura",
+            "image": "images/logos/alura.png",
+            "alt": "Logo Alura",
+            "certificates": [
+                {
+                    "title": "Next.Js: Explorando o Framework",
+                    "description": "Mar 2022 - 8H",
+                    "link": "https://cursos.alura.com.br/certificate/c555e5fa-8ba4-4206-9a2d-2d433a50656a"
+                },
+                {
+                    "title": "Git e Github: Controle e compartilhe seu código",
+                    "description": "Abr 2022 - 6H",
+                    "link": "https://cursos.alura.com.br/certificate/d409470c-32f5-4425-9909-b21605b1b69f"
+                },
+                {
+                    "title": "Linux II: Programas, Processos e Pacotes",
+                    "description": "Abr 2022 - 8H",
+                    "link": "https://cursos.alura.com.br/certificate/1cfb708c-a136-42cb-ad64-08aa76463c53"
+                },
+                {
+                    "title": "React com Typescript",
+                    "description": "Jun 2022 - 75H",
+                    "link": "https://cursos.alura.com.br/degree/certificate/282a139e-3d42-4099-8841-b335bec56a97"
+                },
+                {
+                    "title": "C# e Orientação a Objetos",
+                    "description": "Jun 2022 - 72H",
+                    "link": "https://cursos.alura.com.br/degree/certificate/15f05022-0d2a-4044-b956-7df7895d686e"
+                }
+            ]
+        },
+        {
+            "organization": "Cambly",
+            "image": "images/logos/cambly.png",
+            "alt": "Logo Cambly",
+            "certificates": [
+                {
+                    "title": "Conversation-based English",
+                    "description": "Jun 2022 - 10H",
+                    "link": "https://www.cambly.com/en/certificate/verify/bc17e4fe?lang=pt"
+                }
+            ]
+        },
+        {
+            "organization": "Lemonade School",
+            "image": "images/logos/lemonade_school.png",
+            "alt": "Logo Lemonade School",
+            "certificates": [
+                {
+                    "title": "Gestão de Métodos Ágeis e Fundamentos de Transformação Digital",
+                    "description": "Mai 2022 - 14H",
+                    "link": "https://e-certificado.com/login/visualizar?c=1280894A86B83F4A8661670"
+                }
+            ]
+        }
+    ]
+}

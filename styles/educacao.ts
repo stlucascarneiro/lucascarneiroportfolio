@@ -19,17 +19,22 @@ export const Container = styled.div`
   max-width: 1200px;
 `
 
-export const ChartContainer = styled.div`
-  display: flex;
-  justify-content: center;
-`
-
-export const Title = styled.h3`
-  font-size: 24px;
-  color: ${({ theme }) => theme.color.element.strong};
-  margin: 2rem 0 0 1rem;
+export const Title = styled.h2`
+  margin-bottom: 1rem;
+  font-size: 20px;
 
   @media ${Breakpoints.getBelow('tablet')} {
     font-size: 16px;
   }
+`
+
+export const Anchor = styled.a`
+    color: ${({ theme }) => theme.color.element.regular};
+    font-weight: 300;
+    text-decoration: none;
+
+    &:hover{
+        color: ${({ theme }) => theme.color.brand.secondary};
+        text-decoration: underline;
+    }
 `

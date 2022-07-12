@@ -6,6 +6,7 @@ import { Avatar, Card, Paragraph } from 'components'
 import { PieChart } from 'react-minimal-pie-chart'
 // Data
 import data from 'data/perfil.json'
+import React from 'react'
 
 function Header() {
   const device = useDevice()
@@ -41,8 +42,7 @@ export default function Perfil() {
         </Card>
         <Card title={data.softSkills.title} key={2}>
           {data.softSkills.paragraphs.map((elem, index) => (
-              <Paragraph key={index} title={elem.title}>
-                {elem.text}
+              <Paragraph key={index} title={elem.title} paragraphs={elem.text}>
               </Paragraph>
           ))}
         </Card>

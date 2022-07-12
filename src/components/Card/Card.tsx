@@ -20,7 +20,7 @@ export const ComponentCard = ({ children, title, image, alt, subtitle, sideInfo,
   return (
       <Card clickable={!!onClick}>
         <Header
-          style={{ cursor: onClick ? 'pointer' : '' }}
+          style={{ cursor: onClick ? 'pointer' : 'auto' }}
           onClick={(e) => onClick && onClick(e)}>
             {image && <Image alt={alt} src={image}/>}
             <TitleContainer>

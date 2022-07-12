@@ -58,7 +58,7 @@ export default `
             font-size: 13px;
         }
     }
-    p {
+    p, li {
         font-size: 14px;
         font-weight: 300;
 

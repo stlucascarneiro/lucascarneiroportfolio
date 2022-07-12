@@ -30,6 +30,11 @@ export const Card = styled.div<ICardProps>`
 `
 export const Header = styled.div`
     display: flex;
+
+    @media ${Breakpoints.getBelow('tablet')} {
+      flex-direction: column;
+      align-items: center;
+    }
 `
 export const Image = styled.img`
     width: min-content;
@@ -37,19 +42,31 @@ export const Image = styled.img`
     margin-right: 1rem;
 
     @media ${Breakpoints.getBelow('tablet')} {
-      height: 48px;
+      /* height: 48px; */
+      margin: 0 0 0.5rem 0;
     }
 `
 export const TitleContainer = styled.div`
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+
+    @media ${Breakpoints.getBelow('tablet')} {
+      align-items: center;
+    }
 `
 export const Title = styled.h3`
     color: ${({ theme }) => theme.color.element.strong};
+
+    @media ${Breakpoints.getBelow('tablet')} {
+      text-align: center;
+    }
 `
 export const Subtitle = styled.small`
     font-style: italic;
+    @media ${Breakpoints.getBelow('tablet')} {
+      text-align: center;
+    }
 `
 export const SideInfo = styled.small`
     

@@ -1,11 +1,10 @@
 import { Card, Paragraph, Rate } from 'components'
 import Head from 'next/head'
-import { CardContainer, Flag, Item, Label, LabelContainer, Title } from '../styles/habilidades'
-import { Body, Container } from '../styles/perfil'
+import { Body, Container, CardContainer, Flag, Item, Label, LabelContainer, Title } from '../styles/habilidades'
 // Assets
 import data from 'data/habilidades.json'
 
-export default function Perfil() {
+export default function Habilidades() {
   return (
     <>
       <Head>
