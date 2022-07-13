@@ -22,7 +22,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         { icon: icons.projects, label: 'Projetos', path: '/projetos' },
         { icon: icons.briefcase, label: 'Carreira', path: '/carreira' },
         { icon: icons.education, label: 'Educação', path: '/educacao' },
-        { icon: icons.contact, label: 'Contato', path: '/' }
+        { icon: icons.contact, label: 'Contato', path: '/contato' }
       ]}/>
         <Component {...pageProps} />
     </ThemeProvider>

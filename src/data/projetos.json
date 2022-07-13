@@ -38,7 +38,7 @@
             "architecture": [
                 {
                     "title": "Static Site Generator & Server Side Rendering",
-                    "text": "A maioria das páginas são geradas estaticamente pelo NextJs no lado do servidor e utilizam pouco ou nenhum processamento Javascript no lado do cliente. Isso garante uma melhor performance e ajuda nas ferramentas de pesquisas (SEO). Para páginas dinâmicas, como a /habilidades, uma página é gerada no lado do servidor a cada requisição para ser entregue ao cliente as informações prontas para o consumo"
+                    "text": "A maioria das páginas são geradas estaticamente pelo NextJs no lado do servidor e utilizam pouco ou nenhum processamento Javascript no lado do cliente. Isso garante uma melhor performance e ajuda nas ferramentas de pesquisas (SEO). Para páginas dinâmicas, como a /habilidades, uma página é gerada no lado do servidor a cada requisição para ser entregue ao cliente as informações prontas para o consumo."
                 },
                 {
                     "title": "Funções Serverless",

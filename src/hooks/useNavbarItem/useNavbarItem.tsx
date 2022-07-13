@@ -6,7 +6,7 @@ export enum pages {
   'habilidades',
   'projetos',
   'carreira',
-  'educação',
+  'educacao',
   'contato'
 }
 interface IMenu {

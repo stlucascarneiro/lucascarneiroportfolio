@@ -28,3 +28,8 @@ export const Navigation = styled.button<NavigationProps>`
         transition: .4s;
     }
 `
+
+export const Anchor = styled.a`
+  width: 100%;
+  text-decoration: none;
+`

@@ -72,10 +72,10 @@ export const OrganismNavbar = ({ menu }: IProps) => {
           ))}
         </Body>
         <Footer>
-          <Navigation index={1} icon={Icons.github} path='' active={false}>
+          <Navigation index={2} icon={Icons.linkedin} path='https://www.linkedin.com/in/stlucascarneiro/' active={false} style={{ margin: 0 }} blank>
             stlucascarneiro
           </Navigation>
-          <Navigation index={2} icon={Icons.linkedin} path='' active={false}>
+          <Navigation index={3} icon={Icons.github} path='https://github.com/stlucascarneiro/' active={false} style={{ margin: 0 }} blank>
             stlucascarneiro
           </Navigation>
         </Footer>
