@@ -1,6 +1,6 @@
 # Porfolio - Lucas Carneiro
 
-Este projeto é uma Sigle Page Application em React com o objetivo de publicar minhas habilidades e projetos profissionais.
+Este projeto é uma Sigle Page Application em ReactJs & NextJs com o objetivo de publicar minhas habilidades e projetos profissionais.
 
 ## Tecnologias
 
