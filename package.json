@@ -8,9 +8,11 @@
     "test:ci": "jest --ci"
   },
   "dependencies": {
+    "firebase": "^9.9.0",
     "framer-motion": "^6.3.13",
     "mongodb": "^4.7.0",
     "next": "latest",
+    "nprogress": "^0.2.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-icons": "^4.4.0",
@@ -22,6 +24,7 @@
     "@testing-library/react": "13.2.0",
     "@testing-library/user-event": "14.2.0",
     "@types/mongodb": "^4.0.7",
+    "@types/nprogress": "^0.2.0",
     "@types/react": "18.0.9",
     "@types/react-dom": "^18.0.5",
     "@types/styled-components": "^5.1.25",

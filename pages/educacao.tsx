@@ -1,15 +1,25 @@
 import { Card, Paragraph } from 'components'
 import Head from 'next/head'
 import { Anchor, Body, Container, Title } from '../styles/educacao'
+// API
+import { getData } from 'data'
 // Assets
-import data from 'data/educacao.json'
 import Icons from 'atoms/icons'
+// Types
+import { IEducacao } from 'data/types'
+interface IProps {
+  data: IEducacao
+}
 
-export default function Carreira() {
+export async function getServerSideProps() {
+  const data = await getData('educacao', process.env.USE_LOCAL_DATA)
+  return { props: { data } }
+}
+export default function Carreira({ data }: IProps) {
   return (
     <>
       <Head>
-        <title>Habilidades - Lucas Carneiro</title>
+        <title>Educação - Lucas Carneiro</title>
       </Head>
       <Body>
         <Container>
@@ -20,9 +30,9 @@ export default function Carreira() {
                   title={elem.title}
                   subtitle={elem.organization}
                   sideInfo={elem.date}
-                  image={elem.image}
-                  alt={elem.alt}>
-                    {elem.certificates.length > 0 &&
+                  image={elem.image.path}
+                  alt={elem.image.alt}>
+                    {elem.certificates &&
                     elem.certificates.map((item: any, i) => (
                       <Paragraph key={i}>
                         <Anchor href={item.link} rel="noreferrer" target="_blank">
@@ -38,8 +48,8 @@ export default function Carreira() {
                 <Card
                   key={index}
                   title={elem.organization}
-                  image={elem.image}
-                  alt={elem.alt}>
+                  image={elem.image.path}
+                  alt={elem.image.alt}>
                     {elem.certificates.map((item, i) => (
                       <Paragraph key={i}>
                         <Anchor href={item.link} rel="noreferrer" target="_blank">

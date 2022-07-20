@@ -5,8 +5,17 @@ import { Body, ChartContainer, Container, Title } from '../styles/perfil'
 import { Avatar, Card, Paragraph } from 'components'
 import { PieChart } from 'react-minimal-pie-chart'
 // Data
-import data from 'data/perfil.json'
-import React from 'react'
+import { getData } from 'data'
+// Types
+import { IPerfil } from 'data/types'
+interface IProps{
+  data: IPerfil
+}
+
+export async function getStaticProps() {
+  const data = await getData('perfil', process.env.USE_LOCAL_DATA)
+  return { props: { data } }
+}
 
 function Header() {
   const device = useDevice()
@@ -24,7 +33,7 @@ function Header() {
   )
 }
 
-export default function Perfil() {
+export default function Perfil({ data }: IProps) {
   return (
     <>
     <Head>

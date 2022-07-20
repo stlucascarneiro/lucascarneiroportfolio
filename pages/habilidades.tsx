@@ -1,10 +1,20 @@
 import { Card, Paragraph, Rate } from 'components'
 import Head from 'next/head'
 import { Body, Container, CardContainer, Flag, Item, Label, LabelContainer, Title } from '../styles/habilidades'
-// Assets
-import data from 'data/habilidades.json'
+// API
+import { getData } from 'data'
+// Types
+import { IHabilidades } from 'data/types'
+interface IProps {
+  data: IHabilidades
+}
 
-export default function Habilidades() {
+export async function getServerSideProps() {
+  const data = await getData('habilidades', process.env.USE_LOCAL_DATA)
+  return { props: { data } }
+}
+
+export default function Habilidades({ data }: IProps) {
   return (
     <>
       <Head>
@@ -13,10 +23,12 @@ export default function Habilidades() {
       <Body>
         <Container>
           <Title>Habilidades</Title>
-          <Card title='Tecnologias e técnicas de desenvolvimento'>
-            <Paragraph>
-              Aqui estão algumas tecnologias é tecnicas de desenvolvimento de software que eu estudei e apliquei até o momento. Para melhor entender a qualificação do domínio de cada item veja as legendas:
-            </Paragraph>
+          <Card title={data.technologies.title}>
+            {data.technologies.paragraphs.map((elem, index) => (
+              <Paragraph key={index}>
+                {elem}
+              </Paragraph>
+            ))}
             <LabelContainer>
               <Item>
                 <Flag color='error'/>

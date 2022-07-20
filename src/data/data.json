@@ -1,0 +1,566 @@
+{
+    "perfil": {
+        "brief": {
+            "title": "Um resumo sobre mim",
+            "paragraphs": [
+                "Após uma grande mudança de carreira, criei uma paixão por estudar e trabalhar com desenvolvimento de software que mudou minha vida.",
+                "Eu sou intenso em tudo o que me proponho a fazer e o desejo de sempre me superar me leva a ter prazer em aprender rapidamente.",
+                "Por isso, é imprescindível que eu esteja envolvido em atividades e responsabilidades que me desafiem a ser técnico, criativo e engajado com meus objetivos."
+            ]
+        },
+        "softSkills": {
+            "title": "Soft Skills",
+            "paragraphs": [
+                {
+                    "title": "Aprendizagem",
+                    "text": [
+                        "Tenho prazer em estar constantemente aprendendo, seja para aprimorar meus conhecimentos ou descobrir novas tecnologias.",
+                        "Costumo ser atento às experiências e opiniões de colegas de equipe a fim de facilitar meu processo de aprendizagem e adaptação."
+                    ]
+                },
+                {
+                    "title": "Adaptação e criatividade",
+                    "text": [
+                        "Em todas as minhas experiências anteriores fui capaz de me adaptar muito rapidamente aos ambientes em que trabalhei, eu atribuo isso a uma capacidade de observação e proatividade diante dos desafios.",
+                        "Além disso, gosto de entender bem o fluxo de trabalho e executar soluções para agilizar e/ou automatizar processos, trazendo qualidade para mim e para parceiros."
+                    ]
+                },
+                {
+                    "title": "Técnica e metodologia",
+                    "text": [
+                        "Entendo que para cada atividade existe uma ferramenta adequada e, para isso, me mantenho atualizado às tecnologias do mercado para melhor atender as demandas atuais.",
+                        "Da mesma forma, costumo seguir procedimentos e boas práticas para desenvolver, sabendo que assim eu alcanço maior produtividade nas tarefas."
+                    ]
+                }
+            ]
+        },
+        "profile": [
+            {
+                "title": "Suporte",
+                "text": "O perfil Suporte indica alguém que busca com maior prioridade o desenvolvimento das pessoas e do espírito de equipe. O bem-estar do grupo e a confiança das pessoas umas nas outras são fatores de alta importância.",
+                "rate": 33,
+                "color": "#578BDE"
+            },
+            {
+                "title": "Flexibilidade",
+                "text": "O perfil Flexibilidade indica alguém que busca fazer as coisas de forma diferente. Adaptabilidade e um grau de incerteza fazem parte dessa preferência. Por fim, a busca por liberdade e ausência de restrições também são fatores importantes.",
+                "rate": 29,
+                "color": "#FFA588"
+            },
+            {
+                "title": "Organização",
+                "text": "O perfil Organização diz respeito a alguém que busca ter as coisas claras e diretas. Ter claro o que deve ser feito e os caminhos onde se possa percorrer é uma coisa importante. Essa preferência também demonstra um foco na qualidade e na racionalidade.",
+                "rate": 28,
+                "color": "#FF8EA3"
+            },
+            {
+                "title": "Individualidade",
+                "text": "O perfil Individualidade indica alguém que busca responsabilidades individuais e foco na conquista de metas. Além disso, é importante uma ênfase na execução e na busca pelos números e objetivos setados",
+                "rate": 10,
+                "color": "#16BFC1"
+            }
+        ]
+    },
+    "habilidades": {
+        "technologies": {
+            "title": "Tecnologias e técnicas de desenvolvimento",
+            "paragraphs": [
+                "Aqui estão algumas tecnologias é tecnicas de desenvolvimento de software que eu estudei e apliquei até o momento. Para melhor entender a qualificação do domínio de cada item veja as legendas:"
+            ]
+        },
+        "stacks": [{
+            "title": "Front-end",
+            "subtitle": "Essas são minhas principais habilidades e minha área de especialização",
+            "image": {
+                "path": "images/illustrations/frontend.png",
+                "alt": "Ilustração para desenvolvimento front-end"
+            },
+            "items": [
+                {
+                    "title": "HTML, CSS & Javascript",
+                    "level": 3
+                },
+                {
+                    "title": "Typescript",
+                    "level": 3
+                },
+                {
+                    "title": "ReactJs",
+                    "level": 3
+                },
+                {
+                    "title": "NextJs",
+                    "level": 3
+                },
+                {
+                    "title": "Styled Components",
+                    "level": 3
+                },
+                {
+                    "title": "ChakraUI",
+                    "level": 2
+                },
+                {
+                    "title": "Framer Motion",
+                    "level": 2
+                },
+                {
+                    "title": "Jest",
+                    "level": 2
+                },
+                {
+                    "title": "React Testing Library",
+                    "level": 2
+                },
+                {
+                    "title": "Apollo Client",
+                    "level": 2
+                },
+                {
+                    "title": "Material UI",
+                    "level": 1
+                },
+                {
+                    "title": "Tailwind CSS",
+                    "level": 1
+                },
+                {
+                    "title": "Redux",
+                    "level": 1
+                },
+                {
+                    "title": "Webpack",
+                    "level": 1
+                },
+                {
+                    "title": "Sass",
+                    "level": 1
+                }
+            ]
+        },
+        {
+            "title": "Back-end",
+            "subtitle": "Apesar de não ser minha especialidade, gosto muito de desenvolver back-end e integrar as aplicações da melhor forma",
+            "image": {
+                "path": "images/illustrations/backend.png",
+                "alt": "Ilustração para desenvolvimento back-end"
+            },
+            "items": [
+                {
+                    "title": "NodeJs",
+                    "level": 3
+                },
+                {
+                    "title": "C#",
+                    "level": 3
+                },
+                {
+                    "title": "Git",
+                    "level": 3
+                },
+                {
+                    "title": "Linux",
+                    "level": 3
+                },
+                {
+                    "title": "Express",
+                    "level": 2
+                },
+                {
+                    "title": "Rest",
+                    "level": 2
+                },
+                {
+                    "title": "Padrão MVC",
+                    "level": 2
+                },
+                {
+                    "title": "JWT",
+                    "level": 2
+                },
+                {
+                    "title": "GraphQL",
+                    "level": 2
+                },
+                {
+                    "title": "Apollo Server",
+                    "level": 2
+                },
+                {
+                    "title": "PostgreSQL",
+                    "level": 2
+                },
+                {
+                    "title": "Redis",
+                    "level": 2
+                },
+                {
+                    "title": "Prisma",
+                    "level": 2
+                },
+                {
+                    "title": "GraphQL Nexus",
+                    "level": 2
+                },
+                {
+                    "title": "Sequelize ORM",
+                    "level": 2
+                },
+                {
+                    "title": "Docker",
+                    "level": 1
+                },
+                {
+                    "title": "PHP",
+                    "level": 1
+                }
+            ]
+        },
+        {
+            "title": "Design UI",
+            "subtitle": "Para desenvolver a interface dos meus projetos foi necessário estudar um pouco sobre Design UI",
+            "image": {
+                "path": "images/illustrations/designui.png",
+                "alt": "Ilustração para design de interfaces"
+            },
+            "items": [
+                {
+                    "title": "Figma",
+                    "level": 3
+                },
+                {
+                    "title": "Prototipação & Wireframe",
+                    "level": 3
+                },
+                {
+                    "title": "Design System",
+                    "level": 3
+                },
+                {
+                    "title": "Design Atômico",
+                    "level": 3
+                },
+                {
+                    "title": "Adobe XD",
+                    "level": 2
+                },
+                {
+                    "title": "Heurísticas de Nielsen",
+                    "level": 2
+                }
+            ]
+        }]
+    },
+    "projetos": {
+        "projects": [
+            {
+                "title": "Portfólio - Site Pessoal",
+                "description": "Sigle Page Application em React com o objetivo de publicar minhas habilidades e projetos profissionais",
+                "image": {
+                    "path": "images/previews/portfolio.png",
+                    "alt": "Pré visualização página portfólio"
+                },
+                "repository": "https://github.com/stlucascarneiro/portfolio_client",
+                "deploy": "",
+                "technologies": [
+                    {
+                        "title": "React & Next",
+                        "text": "O React é uma excelente biblioteca para criar interfaces e controlar estados, eventos e comportamentos de forma reativa. Combinada com NextJs, a aplicação conta com toda a funcionalidade de uma SPA somada à performance e à simplicidade de uma página HTML estática provida por SSR e Bundling."
+                    },
+                    {
+                        "title": "Typescript",
+                        "text": "Utilizar Typescript é uma forma de acelerar, criar e manter padrões de código e melhorar a segurança durante o processo de desenvolvimento prevenindo erros e inconsistências através das tipagens de objetos e procedimentos e a validação do código em tempo de desenvolvimento."
+                    },
+                    {
+                        "title": "Styled Components",
+                        "text": "Com a biblioteca do Styled Components é possível escrever o CSS de forma dinâmica com o CSS-in-JS e gerenciar melhor o escopo das regras CSS através da criação de componentes estilizados."
+                    },
+                    {
+                        "title": "Jest & React Testing Library",
+                        "text": "Para desenvolver testes unitários e de integração estou utilizando uma combinação de Jest para execução e organização dos testes automatizados e RTL para a manibulação do DOM."
+                    },
+                    {
+                        "title": "Framer Motion",
+                        "text": "O Framer Motion é uma biblioteca utilizada para criar animações de forma simples e declarativa. Essa funcionalidade se comporta muito bem com o ciclo de vida dos componentes React"
+                    },
+                    {
+                        "title": "Firebase",
+                        "text": "O Firebase foi uma excelente descoberta para mim e encaixou muito bem com esse projeto. É um serviço gratuito do Google que conta com várias ferramentas para a compor a arquitetura da aplicação. Aqui estou utilizando o Realtime Database pela simplicidade das consultas e do tipo de resposta. O servidor do NextJs faz a conexão com o banco de dados que sempre que necessário responde às requisições no formato JSON."
+                    },
+                    {
+                        "title": "Figma",
+                        "text": "Figma é uma ferramenta de prototipação de interfaces online. Costumo utilizá-la para criar wireframes, a responsividade e o design system dos projetos. O arquivo Figma desse projeto pode ser encontrado no link: https://www.figma.com/file/GuB4vAjPTKDcYVTfqfBwXv/Portfolio?node-id=138%3A28"
+                    }
+                ],
+                "architecture": [
+                    {
+                        "title": "Static Site Generator & Server Side Rendering",
+                        "text": "A maioria das páginas são geradas estaticamente pelo NextJs no lado do servidor e utilizam pouco ou nenhum processamento Javascript no lado do cliente. Isso garante uma melhor performance e ajuda nas ferramentas de pesquisas (SEO). Para páginas dinâmicas, como as \"/habilidades\", \"/projetos\" e \"/educacao\", uma página é gerada no lado do servidor a cada requisição para ser entregue ao cliente as informações prontas para o consumo."
+                    },
+                    {
+                        "title": "Test Driven Development (TDD)",
+                        "text": "Para esta aplicação utilizei a técnica de desenvolvimento guiada por testes. Para cada componente e organismo desenvolvo seu teste automatizado com o comportamento esperado usando o padrão AAA (Arrange, Act, Assert) e em seguida desenvolvo sua composição e comportamento."
+                    },
+                    {
+                        "title": "Design System & Design Atômico",
+                        "text": "Para criar uma identidade, manter padrões da interface e reduzir custos de manutenção optei por desenvolver um design system que é formado por regras e padrões pelos quais a interface se compõe. Dentre essas regras o Design Atômico serve para destacar e classificar das menores unidades da interface até a composição completa de uma página. Essa definição também ajuda a agilizar o processo de desenvolvimento."
+                    },
+                    {
+                        "title": "Responsividade",
+                        "text": "A interface criada se adapta a diferentes dispositivos, tanto desktops quanto mobile. Utilizei o conceito de Mobile-first para a criação visto que ajuda no desenvolvimento da adaptação da interface e dá prioridadade aos dispositivos mais utilizados atualmente."
+                    }
+                ]
+            },
+            {
+                "title": "Desafio Porto Seguro",
+                "description": "Esse é o resultado de um desafio de desenvolver uma Landing Page em React a partir de um protótipo pronto.",
+                "image": {
+                    "path": "images/previews/desafio_porto_seguro.png",
+                    "alt": "Pré visualização página desafio porto seguro"
+                },
+                "repository": "https://github.com/stlucascarneiro/desafio_porto-seguro",
+                "deploy": "https://desafio-porto-seguro.vercel.app",
+                "technologies": [
+                    {
+                        "title": "React & Next",
+                        "text": "O React é uma excelente biblioteca para criar interfaces e controlar estados, eventos e comportamentos de forma reativa. Combinada com NextJs, a aplicação conta com toda a funcionalidade de uma SPA somada à performance e à simplicidade de uma página HTML estática provida por SSR e Bundling."
+                    },
+                    {
+                        "title": "Typescript",
+                        "text": "Utilizar Typescript é uma forma de acelerar, criar e manter padrões de código e melhorar a segurança durante o processo de desenvolvimento prevenindo erros e inconsistências através das tipagens de objetos e procedimentos e a validação do código em tempo de desenvolvimento."
+                    },
+                    {
+                        "title": "Styled Components",
+                        "text": "Com a biblioteca do Styled Components é possível escrever o CSS de forma dinâmica com o CSS-in-JS e gerenciar melhor o escopo das regras CSS através da criação de componentes estilizados."
+                    },
+                    {
+                        "title": "Figma",
+                        "text": "Figma é uma ferramenta de prototipação de interfaces online. Costumo utilizá-la para criar wireframes, a responsividade e o design system dos projetos."
+                    }
+                ],
+                "architecture": [
+                    {
+                        "title": "Static Site Generator",
+                        "text": "A página é gerada estaticamente através da função getServerSideProps do Next e é entregue somente as informações que o cliente precisa para consumir, sem que precise realizar qualquer processamento pelo navegador."
+                    },{
+                        "title": "Design System & Design Atômico",
+                        "text": "Para criar uma identidade, manter padrões da interface e reduzir custos de manutenção optei por desenvolver um design system que é formado por regras e padrões pelos quais a interface se compõe. Dentre essas regras o Design Atômico serve para destacar e classificar das menores unidades da interface até a composição completa de uma página. Essa definição também ajuda a agilizar o processo de desenvolvimento."
+                    },
+                    {
+                        "title": "Responsividade",
+                        "text": "A interface criada se adapta a diferentes dispositivos, tanto desktops quanto mobile. Utilizei o conceito de Mobile-first para a criação visto que ajuda no desenvolvimento da adaptação da interface e dá prioridadade aos dispositivos mais utilizados atualmente."
+                    }
+                ]
+            },
+            {
+                "title": "Sala Dungeon - Server",
+                "description": "Camada de back-end de um blog especializado em jogos de tabuleiro. Possui um CRUD feito com NodeJS, GraphQL, Prisma e PostgreSQL",
+                "image": {
+                    "path": "images/logos/graphql.png",
+                    "alt": "Logo GraphQL"
+                },
+                "repository": "https://github.com/stlucascarneiro/saladungeon-server",
+                "deploy": "",
+                "technologies": [
+                    {
+                        "title": "Typescript",
+                        "text": "Utilizar Typescript é uma forma de acelerar, criar e manter padrões de código e melhorar a segurança durante o processo de desenvolvimento prevenindo erros e inconsistências através das tipagens de objetos e procedimentos e a validação do código em tempo de desenvolvimento."
+                    },
+                    {
+                        "title": "GraphQL & Apollo Server",
+                        "text": "Previnindo o Over-fetching, o GraphQL entra como uma solução com o objetivo de simplificar e melhorar a performance da comunicação entre front-end e back-end. Utilizei o Apollo Server para integrar com Apollo Client, Prisma e plugins do Nexus Prisma."
+                    },
+                    {
+                        "title": "Prisma",
+                        "text": "Utilizei o Prisma para agir como um ORM. Ele mapeia e modela os objetos do banco, cria migrations e seeds, facilita e agiliza o processo de desenvolvimento e cria uma conexão e comunicação mais segura com o banco de dados."
+                    },
+                    {
+                        "title": "Nexus",
+                        "text": "O Nexus foi uma escolha para utilizar a abordagem Code First nas declarações dos Schemas para o GraphQL. Ele funciona bem com o Typescript e previne o código de ficar verborrágico"
+                    },
+                    {
+                        "title": "PostgreSQL",
+                        "text": "A escolha do PostgreSQL nesse projeto se deu simplesmente pelo fato de ser gratuito e possuir compatibilidade com arrays."
+                    },
+                    {
+                        "title": "Redis",
+                        "text": "Redis é um armazenamento de dados em memória que, nesta aplicação, estou utilizando apenas para controlar a validade dos Access e Refresh Token"
+                    },
+                    {
+                        "title": "Json Web Token (JWT)",
+                        "text": "JWT é uma tecnologia bem difundida no mercado para controle de dados com assinatura. Aqui estou utilizando para passar e receber informações sobre o usuário de forma segura através da API"
+                    }
+                ],
+                "architecture": [
+                    {
+                        "title": "Padrão MVC",
+                        "text": "Foi utilizado o padrão de arquitetura MVC com algumas alterações para se adequar a uma API GraphQL. Os Schemas são o mapeamento do banco de dados e dos resolvers (Queries e Mutations). Dentro de Modelos estão os objetos com propriedades e métodos necessários para a manipulação de uma tecnologia. Os Controllers definem o fluxo de métodos para cada requisição. Por fim, os Middlewares são validações que serão reutilizadas em diversas etapas do fluxo."
+                    },
+                    {
+                        "title": "Refresh & Access Token",
+                        "text": "O fluxo de autenticação de usuários utiliza o Access Token como uma credencial que o usuário deverá apresentar a cada requisição e o Refresh Token para fazer uma verificação recorrente da validade do Access Token e evitar que o usuário tenha que se autenticar sempre que um JWT expirar."
+                    },
+                    {
+                        "title": "Segurança",
+                        "text": "Todos os inputs são validados para evitar qualquer injeção e todos códigos secretos são criptografados usando bcrypt para melhorar a segurança dos dados."
+                    }
+                ]
+            }
+        ],
+        "minorProjects": [
+            {
+                "title": "Landing Page com ReactJs",
+                "description": "ReactJs, ChakraUI e Styled Components",
+                "image": {
+                    "path": "images/logos/react.png",
+                    "alt": "Logo ReactJs"
+                },
+                "repository": "https://github.com/stlucascarneiro/Landing-Page-Example"
+            },
+            {
+                "title": "CRUD com Sequelize ORM",
+                "description": "NodeJs, Javascript, Sequelize ORM e PostgreSQL",
+                "image": {
+                    "path": "images/logos/sequelize.png",
+                    "alt": "Logo Sequelize ORM"
+                },
+                "repository": "https://github.com/stlucascarneiro/CRUD-NodeJS"
+            }
+        ]
+    },
+    "carreira": {
+        "jobs": [
+            {
+                "company": "Mutant",
+                "role": "Desenvolvedor full stack",
+                "level": "Estágio",
+                "date": "Outubro de 2021 - Atualmente",
+                "image": {
+                    "path": "images/logos/mutant.png",
+                    "alt": "Logo Mutant"
+                },
+                "description": [
+                    "Desenvolvimento e manutenção de URAs",
+                    "Desenvolvimento e manutenção de integrações",
+                    "Linguagens utilizadas: C# e Node.Js",
+                    "Tecnologias Front-end: React, Next.Js, Typescript, Styled Components.",
+                    "Tecnologias Back-end: GraphQL, Rest, Linux, Redis, Consul, Docker e Git."
+                ]
+            }
+        ],
+        "others": [
+            {
+                "company": "Escola Dinâmica do Ensino Moderno",
+                "role": "Professor de música",
+                "level": "Estágio",
+                "image": {
+                    "path": "images/logos/edem.png",
+                    "alt": "Logo EDEM"
+                }
+            },
+            {
+                "company": "Hospital Israelita Albert Sabin",
+                "role": "Assistente administrativo",
+                "level": "Jovem Aprendiz",
+                "image": {
+                    "path": "images/logos/albert_sabin.png",
+                    "alt": "Logo Hospital Israelita Albert Sabin"
+                }
+            }
+        ]
+    },
+    "educacao": {
+        "graduates": [
+            {
+                "title": "Análise e desenvolvimento de sistemas",
+                "organization": "Faculdade Descomplica",
+                "image": {
+                    "path": "images/logos/descomplica.png",
+                    "alt":"Logo Faculdade Descomplica"
+                },
+                "date": "2022 - conclusão em 2024",
+                "certificates": [
+                    {
+                        "title": "Especialista em Programming Basics",
+                        "description": "Jun 2022 - 160H",
+                        "link": "https://microcertificado.descomplica.com.br/b3d42f911dbe9defd37b57fe9f50711cff7c2cb9d5c03c022fbc0b09da28d59d"
+                    }
+                ]
+            },
+            {
+                "title": "Licenciatura em música",
+                "organization": "Universidade Federal do Estado do Rio de Janeiro",
+                "image": {
+                    "path": "images/logos/unirio.png",
+                    "alt":"Logo Universidade Federal do Estado do Rio de Janeiro"
+                },
+                "date": "2015 - 2021",
+                "certificates": null
+            }
+        ],
+        "courses" : [
+            {
+                "organization": "Alura",
+                "image": {
+                    "path": "images/logos/alura.png",
+                    "alt": "Logo Alura"
+                },
+                "certificates": [
+                    {
+                        "title": "Next.Js: Explorando o Framework",
+                        "description": "Mar 2022 - 8H",
+                        "link": "https://cursos.alura.com.br/certificate/c555e5fa-8ba4-4206-9a2d-2d433a50656a"
+                    },
+                    {
+                        "title": "Git e Github: Controle e compartilhe seu código",
+                        "description": "Abr 2022 - 6H",
+                        "link": "https://cursos.alura.com.br/certificate/d409470c-32f5-4425-9909-b21605b1b69f"
+                    },
+                    {
+                        "title": "Linux II: Programas, Processos e Pacotes",
+                        "description": "Abr 2022 - 8H",
+                        "link": "https://cursos.alura.com.br/certificate/1cfb708c-a136-42cb-ad64-08aa76463c53"
+                    },
+                    {
+                        "title": "React com Typescript",
+                        "description": "Jun 2022 - 75H",
+                        "link": "https://cursos.alura.com.br/degree/certificate/282a139e-3d42-4099-8841-b335bec56a97"
+                    },
+                    {
+                        "title": "C# e Orientação a Objetos",
+                        "description": "Jun 2022 - 72H",
+                        "link": "https://cursos.alura.com.br/degree/certificate/15f05022-0d2a-4044-b956-7df7895d686e"
+                    }
+                ]
+            },
+            {
+                "organization": "Cambly",
+                "image": {
+                    "path": "images/logos/cambly.png",
+                    "alt": "Logo Cambly"
+                },
+                "certificates": [
+                    {
+                        "title": "Conversation-based English",
+                        "description": "Jun 2022 - 15H",
+                        "link": "https://www.cambly.com/en/certificate/verify/5d456aff?lang=pt"
+                    }
+                ]
+            },
+            {
+                "organization": "Lemonade School",
+                "image": {
+                    "path": "images/logos/lemonade_school.png",
+                    "alt": "Logo Lemonade School"
+                },
+                "certificates": [
+                    {
+                        "title": "Gestão de Métodos Ágeis e Fundamentos de Transformação Digital",
+                        "description": "Mai 2022 - 14H",
+                        "link": "https://e-certificado.com/login/visualizar?c=1280894A86B83F4A8661670"
+                    }
+                ]
+            }
+        ]
+    }
+}

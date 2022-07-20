@@ -1,25 +1,37 @@
 import { Card } from 'components'
 import Head from 'next/head'
 import { Body, Container, Title, Ul } from '../styles/carreira'
-// Assets
-import data from 'data/carreira.json'
+// API
+// import data from 'data/carreira.json'
+import { ICarreira } from 'data/types'
+import { getData } from 'data'
+// Types
+interface IProps{
+  data: ICarreira
+}
 
-export default function Carreira() {
+export async function getStaticProps() {
+  const data = await getData('carreira', process.env.USE_LOCAL_DATA)
+  return { props: { data } }
+}
+
+export default function Carreira({ data }: IProps) {
   return (
     <>
       <Head>
-        <title>Habilidades - Lucas Carneiro</title>
+        <title>Carreira - Lucas Carneiro</title>
       </Head>
       <Body>
         <Container>
             <Title>Minha carreira</Title>
-            {data.Jobs.map((elem, index) => (
+            {data.jobs.map((elem, index) => (
                 <Card
                  key={index}
                  title={elem.company}
                  subtitle={`${elem.level} - ${elem.role}`}
                  sideInfo={elem.date}
-                 image={elem.image}>
+                 image={elem.image.path}
+                 alt={elem.image.path}>
                     <Ul>
                         {elem.description.map((item, i) => (
                             <li key={i}>{item}</li>
@@ -28,12 +40,13 @@ export default function Carreira() {
                 </Card>
             ))}
             <Title>Outras experiências</Title>
-            {data.Others.map((elem, index) => (
+            {data.others.map((elem, index) => (
               <Card
                 key={index}
                 title={elem.company}
                 subtitle={`${elem.level} - ${elem.role}`}
-                image={elem.image}/>
+                image={elem.image.path}
+                alt={elem.image.alt}/>
             ))}
         </Container>
       </Body>

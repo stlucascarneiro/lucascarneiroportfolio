@@ -9,7 +9,7 @@ export default function Contato() {
   return (
     <>
       <Head>
-        <title>Habilidades - Lucas Carneiro</title>
+        <title>Contato - Lucas Carneiro</title>
       </Head>
       <Body>
         <Container>

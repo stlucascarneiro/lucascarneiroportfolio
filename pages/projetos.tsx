@@ -1,16 +1,26 @@
 import Head from 'next/head'
 import { Expansible } from 'organisms'
 import { Body, Container, SectionTitle, Title } from '../styles/projetos'
-// Assets
-import data from 'data/projetos.json'
 import { Card, Paragraph } from 'components'
+// Assets
 import Icons from 'atoms/icons'
+import { getData } from 'data'
+// Types
+import { IProjetos } from 'data/types'
+interface IProps {
+  data: IProjetos
+}
 
-export default function Home() {
+export async function getServerSideProps() {
+  const data = await getData('projetos', process.env.USE_LOCAL_DATA)
+  return { props: { data } }
+}
+
+export default function Home({ data } : IProps) {
   return (
     <>
       <Head>
-        <title>Perfil - Lucas Carneiro</title>
+        <title>Projetos - Lucas Carneiro</title>
       </Head>
       <Body>
         <Container>

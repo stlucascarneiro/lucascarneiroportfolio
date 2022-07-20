@@ -3,15 +3,15 @@ import { motion } from 'framer-motion'
 import { Breakpoints } from 'utils/breakpoints'
 
 export const MobileHeader = styled.div`
-  display: flex;
+  display: none;
   justify-content: space-between;
   font-size: 32px;
   padding: 1rem;
   background-color: ${({ theme }) => theme.color.background.glassy};
   backdrop-filter: blur(12px);
 
-  @media ${Breakpoints.getAbove('tablet')} {
-    display: none;
+  @media ${Breakpoints.getBelow('tablet')} {
+    display: flex;
   }
 `
 export const Overlay = styled.div`

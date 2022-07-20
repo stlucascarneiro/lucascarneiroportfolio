@@ -1,13 +1,18 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import Router from 'next/router'
 // Config
 import GlobalStyle from '../styles/global'
 import { ThemeProvider } from 'styled-components'
 import theme from 'atoms/theme'
-import { Navbar } from 'organisms'
 import icons from 'atoms/icons'
+// Components
+import { Navbar } from 'organisms'
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 
-// Types
+Router.events.on('routeChangeStart', () => NProgress.start())
+Router.events.on('routeChangeComplete', () => NProgress.done())
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
