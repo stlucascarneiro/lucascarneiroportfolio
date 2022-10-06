@@ -10,7 +10,7 @@ interface IProps{
   data: ICarreira
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const data = await getData('carreira', process.env.USE_LOCAL_DATA)
   return { props: { data } }
 }
